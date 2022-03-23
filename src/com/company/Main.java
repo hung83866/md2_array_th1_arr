@@ -8,10 +8,10 @@ public class Main {
         daoNguocPhanTuMang(array);
     }
     static void    daoNguocPhanTuMang(int[] arr){
-        for (int i = 0;i<arr.length;i++){
+        for (int i = 0;i<arr.length/2;i++){
             int temp = arr[i];
-            arr[i]=arr[arr.length-1];
-            arr[arr.length-1] = temp;
+            arr[i]=arr[arr.length-1-i];
+            arr[arr.length-1-i] = temp;
 
         }
         for (int newArray: arr ) {
